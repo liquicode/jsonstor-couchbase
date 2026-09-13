@@ -25,7 +25,7 @@ declare module '@liquicode/jsonstor-couchbase'
 		CollectionName: string;
 		/** The document field which is the identifier. `String()` of its value becomes the Couchbase document key. `IdField` is the former spelling and still works. Defaults to `"_id"`. */
 		PrimaryKey?: string;
-		/** Allow an update or a replacement to change the identifier. Off by default, so an operation which would move it is refused by name rather than silently discarded. Defaults to `false`. */
+		/** Allow an update or replacement to change the identifier. When `false`, such an operation is refused. Defaults to `false`. */
 		PrimaryKeyMutable?: boolean;
 		/** The user to connect as. Empty means none. Defaults to `""`. */
 		UserName?: string;
